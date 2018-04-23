@@ -13,6 +13,7 @@
 		BC05B188208E0C0F0002C8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC05B187208E0C0F0002C8BE /* Assets.xcassets */; };
 		BC05B18B208E0C0F0002C8BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC05B189208E0C0F0002C8BE /* LaunchScreen.storyboard */; };
 		BC05B196208E0C0F0002C8BE /* securemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05B195208E0C0F0002C8BE /* securemeTests.swift */; };
+		BC05B1A1208E0C600002C8BE /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05B1A0208E0C600002C8BE /* NewsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BC05B191208E0C0F0002C8BE /* securemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = securemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC05B195208E0C0F0002C8BE /* securemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = securemeTests.swift; sourceTree = "<group>"; };
 		BC05B197208E0C0F0002C8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC05B1A0208E0C600002C8BE /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				BC05B180208E0C0E0002C8BE /* AppDelegate.swift */,
 				BC05B182208E0C0E0002C8BE /* ViewController.swift */,
 				BC05B184208E0C0E0002C8BE /* Main.storyboard */,
+				BC05B1A0208E0C600002C8BE /* NewsTableViewController.swift */,
 				BC05B187208E0C0F0002C8BE /* Assets.xcassets */,
 				BC05B189208E0C0F0002C8BE /* LaunchScreen.storyboard */,
 				BC05B18C208E0C0F0002C8BE /* Info.plist */,
@@ -199,6 +202,7 @@
 			files = (
 				BC05B183208E0C0E0002C8BE /* ViewController.swift in Sources */,
 				BC05B181208E0C0E0002C8BE /* AppDelegate.swift in Sources */,
+				BC05B1A1208E0C600002C8BE /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV3FYVB8JV;
 				INFOPLIST_FILE = secureme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV3FYVB8JV;
 				INFOPLIST_FILE = secureme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
