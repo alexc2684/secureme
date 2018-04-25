@@ -23,6 +23,7 @@ class NewsSelectionTableViewController: UITableViewController {
     var email = String()
     var phone = String()
     
+    @IBOutlet var selectionTableView: UITableView!
     @IBAction func submit(_ sender: Any) {
 //        let user = User(username: username, password: password, email: email, phone: phone, selections: selected)
         var items = [String]()
@@ -36,10 +37,16 @@ class NewsSelectionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewData = [cellData(opened: false, title: "Mobile", sectionData: ["iPhone", "Galaxy"]),
-        cellData(opened: false, title: "Laptops", sectionData: ["MacBook Pro", "Microsoft Surface Pro"]),
-        cellData(opened: false, title: "Banks", sectionData: ["Bank of America", "Wells Fargo"]),
-        cellData(opened: false, title: "Cryptocurrency", sectionData: ["Bitcoin", "Ethereum"])]
+        selectionTableView.delegate = self
+        selectionTableView.dataSource = self
+        tableViewData = [
+                        cellData(opened: false, title: "Social Media", sectionData: ["Facebook", "Instagram", "WhatsApp"]),
+                        cellData(opened: false, title: "Browsers", sectionData: ["Chrome", "Firefox"]),
+                         cellData(opened: false, title: "Operating Systems", sectionData: ["Windows", "MacOS", "Linux"]),
+//                         cellData(opened: false, title: "Laptops", sectionData: ["MacBook Pro", "Microsoft Surface Pro"]),
+                         cellData(opened: false, title: "Mobile", sectionData: ["iPhone", "Galaxy"]),
+//                         cellData(opened: false, title: "Banks", sectionData: ["Bank of America", "Wells Fargo"]),
+                         cellData(opened: false, title: "Cryptocurrency", sectionData: ["Bitcoin", "Ethereum"])]
         
         for item in tableViewData {
             for title in item.sectionData {
@@ -68,13 +75,17 @@ class NewsSelectionTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return tableViewData.count
@@ -90,17 +101,30 @@ class NewsSelectionTableViewController: UITableViewController {
         }
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+////        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
+//        super.viewWillAppear(animated)
+//
+//        // Add a background view to the table view
+//        let backgroundImage = UIImage(named: "Image")
+//        let imageView = UIImageView(image: backgroundImage)
+//        self.tableView.backgroundView = imageView
+//    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataIndex = indexPath.row - 1
         if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else {return UITableViewCell()}
-            cell.textLabel?.text = tableViewData[indexPath.section].title
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SelectionTableViewCell
+            let name = tableViewData[indexPath.section].title
+            cell.iconLabel.text = name
+            cell.iconImage.image = UIImage(named: name)
 //            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
             return cell
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else {return UITableViewCell()}
-            cell.textLabel?.text = tableViewData[indexPath.section].sectionData[dataIndex]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SelectionTableViewCell
+            let name = tableViewData[indexPath.section].sectionData[dataIndex]
+            cell.iconLabel.text = name
+            cell.iconImage.image = UIImage(named: name)
             return cell
 
         }
@@ -120,11 +144,13 @@ class NewsSelectionTableViewController: UITableViewController {
         } else {
             if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark {
                 tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
-                let name = tableView.cellForRow(at: indexPath)?.textLabel!.text!
+                let curr = tableView.cellForRow(at: indexPath) as! SelectionTableViewCell
+                let name = curr.iconLabel.text
                 selected[name!] = false
             } else {
                 tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
-                let name = tableView.cellForRow(at: indexPath)?.textLabel!.text!
+                let curr = tableView.cellForRow(at: indexPath) as! SelectionTableViewCell
+                let name = curr.iconLabel.text
                 selected[name!] = true
             }
 

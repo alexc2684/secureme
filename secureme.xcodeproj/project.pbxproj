@@ -20,6 +20,19 @@
 		BC949C2E20906FC40020A5EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC949C2D20906FC40020A5EB /* LoginViewController.swift */; };
 		BC949C31209072CB0020A5EB /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC949C2F209072CB0020A5EB /* User.xcdatamodeld */; };
 		BCCB753B2090888C00BF680C /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */; };
+		BCCB753F2091136700BF680C /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB753E2091136700BF680C /* SelectionTableViewCell.swift */; };
+		BCCB754C209124F600BF680C /* Firefox.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7541209124F600BF680C /* Firefox.JSON */; };
+		BCCB754D209124F600BF680C /* Instagram.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7542209124F600BF680C /* Instagram.JSON */; };
+		BCCB754E209124F600BF680C /* Facebook.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7543209124F600BF680C /* Facebook.JSON */; };
+		BCCB754F209124F600BF680C /* Gmail.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7544209124F600BF680C /* Gmail.JSON */; };
+		BCCB7550209124F600BF680C /* Chrome.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7545209124F600BF680C /* Chrome.JSON */; };
+		BCCB7551209124F600BF680C /* iOS.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7546209124F600BF680C /* iOS.JSON */; };
+		BCCB7552209124F600BF680C /* Linux.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7547209124F600BF680C /* Linux.JSON */; };
+		BCCB7553209124F600BF680C /* MacBook Pro.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7548209124F600BF680C /* MacBook Pro.JSON */; };
+		BCCB7554209124F600BF680C /* WhatsApp.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB7549209124F600BF680C /* WhatsApp.JSON */; };
+		BCCB7555209124F600BF680C /* Windows.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB754A209124F600BF680C /* Windows.JSON */; };
+		BCCB7556209124F600BF680C /* Android.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB754B209124F600BF680C /* Android.JSON */; };
+		BCCB755820912AE600BF680C /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB755720912AE600BF680C /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +63,19 @@
 		BC949C2D20906FC40020A5EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC949C30209072CB0020A5EB /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
+		BCCB753E2091136700BF680C /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
+		BCCB7541209124F600BF680C /* Firefox.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Firefox.JSON; sourceTree = "<group>"; };
+		BCCB7542209124F600BF680C /* Instagram.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Instagram.JSON; sourceTree = "<group>"; };
+		BCCB7543209124F600BF680C /* Facebook.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Facebook.JSON; sourceTree = "<group>"; };
+		BCCB7544209124F600BF680C /* Gmail.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gmail.JSON; sourceTree = "<group>"; };
+		BCCB7545209124F600BF680C /* Chrome.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chrome.JSON; sourceTree = "<group>"; };
+		BCCB7546209124F600BF680C /* iOS.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iOS.JSON; sourceTree = "<group>"; };
+		BCCB7547209124F600BF680C /* Linux.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Linux.JSON; sourceTree = "<group>"; };
+		BCCB7548209124F600BF680C /* MacBook Pro.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MacBook Pro.JSON"; sourceTree = "<group>"; };
+		BCCB7549209124F600BF680C /* WhatsApp.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WhatsApp.JSON; sourceTree = "<group>"; };
+		BCCB754A209124F600BF680C /* Windows.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Windows.JSON; sourceTree = "<group>"; };
+		BCCB754B209124F600BF680C /* Android.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Android.JSON; sourceTree = "<group>"; };
+		BCCB755720912AE600BF680C /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = secureme/ArticleViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +117,14 @@
 		BC05B17F208E0C0E0002C8BE /* secureme */ = {
 			isa = PBXGroup;
 			children = (
+				BCCB755720912AE600BF680C /* ArticleViewController.swift */,
 				BC949C2D20906FC40020A5EB /* LoginViewController.swift */,
 				BC05B180208E0C0E0002C8BE /* AppDelegate.swift */,
 				BC05B182208E0C0E0002C8BE /* ViewController.swift */,
 				BC05B184208E0C0E0002C8BE /* Main.storyboard */,
+				BCCB753E2091136700BF680C /* SelectionTableViewCell.swift */,
 				BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */,
+				BCCB7540209123C300BF680C /* data */,
 				BC949C2F209072CB0020A5EB /* User.xcdatamodeld */,
 				BC949C29209061B20020A5EB /* SignupViewController.swift */,
 				BC0CEFC4208EC27F00A4F348 /* NewsTypeTableViewController.swift */,
@@ -115,6 +144,24 @@
 				BC05B197208E0C0F0002C8BE /* Info.plist */,
 			);
 			path = securemeTests;
+			sourceTree = "<group>";
+		};
+		BCCB7540209123C300BF680C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				BCCB754B209124F600BF680C /* Android.JSON */,
+				BCCB7545209124F600BF680C /* Chrome.JSON */,
+				BCCB7543209124F600BF680C /* Facebook.JSON */,
+				BCCB7541209124F600BF680C /* Firefox.JSON */,
+				BCCB7544209124F600BF680C /* Gmail.JSON */,
+				BCCB7542209124F600BF680C /* Instagram.JSON */,
+				BCCB7546209124F600BF680C /* iOS.JSON */,
+				BCCB7547209124F600BF680C /* Linux.JSON */,
+				BCCB7548209124F600BF680C /* MacBook Pro.JSON */,
+				BCCB7549209124F600BF680C /* WhatsApp.JSON */,
+				BCCB754A209124F600BF680C /* Windows.JSON */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +246,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC05B18B208E0C0F0002C8BE /* LaunchScreen.storyboard in Resources */,
+				BCCB7555209124F600BF680C /* Windows.JSON in Resources */,
+				BCCB7550209124F600BF680C /* Chrome.JSON in Resources */,
+				BCCB754D209124F600BF680C /* Instagram.JSON in Resources */,
+				BCCB754F209124F600BF680C /* Gmail.JSON in Resources */,
+				BCCB7552209124F600BF680C /* Linux.JSON in Resources */,
+				BCCB7553209124F600BF680C /* MacBook Pro.JSON in Resources */,
 				BC05B188208E0C0F0002C8BE /* Assets.xcassets in Resources */,
 				BC05B186208E0C0E0002C8BE /* Main.storyboard in Resources */,
+				BCCB754C209124F600BF680C /* Firefox.JSON in Resources */,
+				BCCB7554209124F600BF680C /* WhatsApp.JSON in Resources */,
+				BCCB7556209124F600BF680C /* Android.JSON in Resources */,
+				BCCB754E209124F600BF680C /* Facebook.JSON in Resources */,
+				BCCB7551209124F600BF680C /* iOS.JSON in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +281,11 @@
 				BC949C2A209061B20020A5EB /* SignupViewController.swift in Sources */,
 				BCCB753B2090888C00BF680C /* ArticlesTableViewController.swift in Sources */,
 				BC05B1AE208E1EF00002C8BE /* User.swift in Sources */,
+				BCCB755820912AE600BF680C /* ArticleViewController.swift in Sources */,
 				BC05B183208E0C0E0002C8BE /* ViewController.swift in Sources */,
 				BC05B181208E0C0E0002C8BE /* AppDelegate.swift in Sources */,
 				BC0CEFC5208EC27F00A4F348 /* NewsTypeTableViewController.swift in Sources */,
+				BCCB753F2091136700BF680C /* SelectionTableViewCell.swift in Sources */,
 				BC05B1A1208E0C600002C8BE /* NewsSelectionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
