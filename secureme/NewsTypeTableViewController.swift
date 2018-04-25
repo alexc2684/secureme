@@ -30,20 +30,28 @@ class NewsTypeTableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondController = segue.destination as! ArticlesTableViewController
+        if segue.identifier == "newsTypeSegue" {
+            let secondController = segue.destination as! ArticlesTableViewController
+            secondController.source = curr
+        }
         
         //store these as core data
-        secondController.source = curr
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return newsItems.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "deviceCell") else {return UITableViewCell()}
-        cell.textLabel?.text = newsItems[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "deviceCell") as! TopicsTableViewCell
+//        cell.textLabel?.text = newsItems[indexPath.row]
+        let name = newsItems[indexPath.row]
+        cell.iconImage.image = UIImage(named: name)
+        cell.iconLabel.text = name
         return cell
     }
  

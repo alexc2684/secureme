@@ -33,6 +33,7 @@
 		BCCB7555209124F600BF680C /* Windows.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB754A209124F600BF680C /* Windows.JSON */; };
 		BCCB7556209124F600BF680C /* Android.JSON in Resources */ = {isa = PBXBuildFile; fileRef = BCCB754B209124F600BF680C /* Android.JSON */; };
 		BCCB755820912AE600BF680C /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB755720912AE600BF680C /* ArticleViewController.swift */; };
+		BCCB755A20913CE400BF680C /* TopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB755920913CE400BF680C /* TopicsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BCCB754A209124F600BF680C /* Windows.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Windows.JSON; sourceTree = "<group>"; };
 		BCCB754B209124F600BF680C /* Android.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Android.JSON; sourceTree = "<group>"; };
 		BCCB755720912AE600BF680C /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = secureme/ArticleViewController.swift; sourceTree = SOURCE_ROOT; };
+		BCCB755920913CE400BF680C /* TopicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				BC05B180208E0C0E0002C8BE /* AppDelegate.swift */,
 				BC05B182208E0C0E0002C8BE /* ViewController.swift */,
 				BC05B184208E0C0E0002C8BE /* Main.storyboard */,
+				BCCB755920913CE400BF680C /* TopicsTableViewCell.swift */,
 				BCCB753E2091136700BF680C /* SelectionTableViewCell.swift */,
 				BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */,
 				BCCB7540209123C300BF680C /* data */,
@@ -285,6 +288,7 @@
 				BC05B183208E0C0E0002C8BE /* ViewController.swift in Sources */,
 				BC05B181208E0C0E0002C8BE /* AppDelegate.swift in Sources */,
 				BC0CEFC5208EC27F00A4F348 /* NewsTypeTableViewController.swift in Sources */,
+				BCCB755A20913CE400BF680C /* TopicsTableViewCell.swift in Sources */,
 				BCCB753F2091136700BF680C /* SelectionTableViewCell.swift in Sources */,
 				BC05B1A1208E0C600002C8BE /* NewsSelectionTableViewController.swift in Sources */,
 			);

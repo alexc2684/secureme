@@ -80,13 +80,16 @@ class ArticlesTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondController = segue.destination as! ArticleViewController
-        if let indexPath = tableView.indexPathForSelectedRow{
-            let index = indexPath.row
-            secondController.name = titles[index]
-            secondController.i = intros[index]
-            secondController.l = links[index]
+        if segue.identifier == "articleSegue" {
+            let secondController = segue.destination as! ArticleViewController
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let index = indexPath.row
+                secondController.name = titles[index]
+                secondController.i = intros[index]
+                secondController.l = links[index]
+            }
         }
+
     }
     /*
     // Override to support conditional editing of the table view.
