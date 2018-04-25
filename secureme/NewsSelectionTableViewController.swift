@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 struct cellData {
     var opened = Bool()
@@ -14,17 +15,52 @@ struct cellData {
     var sectionData = [String]()
 }
 
-class NewsTableViewController: UITableViewController {
+class NewsSelectionTableViewController: UITableViewController {
     var selected = [String: Bool]()
     var tableViewData = [cellData]()
-
+    var username = String()
+    var password = String()
+    var email = String()
+    var phone = String()
+    
+    @IBAction func submit(_ sender: Any) {
+//        let user = User(username: username, password: password, email: email, phone: phone, selections: selected)
+        var items = [String]()
+        for (name, b) in selected {
+            if b {
+                items.append(name)
+            }
+        }
+        UserDefaults.standard.set(items, forKey: username)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableViewData = [cellData(opened: false, title: "Mobile", sectionData: ["iPhone", "Galaxy"]),
         cellData(opened: false, title: "Laptops", sectionData: ["MacBook Pro", "Microsoft Surface Pro"]),
         cellData(opened: false, title: "Banks", sectionData: ["Bank of America", "Wells Fargo"]),
         cellData(opened: false, title: "Cryptocurrency", sectionData: ["Bitcoin", "Ethereum"])]
+        
+        for item in tableViewData {
+            for title in item.sectionData {
+                selected[title] = false
+            }
+        }
+        
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let context = appDelegate.persistentContainer.viewContext
+//        let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
+//        newUser.setValue(username, forKey: "username")
+//        newUser.setValue(password, forKey: "password")
+//        newUser.setValue(email, forKey: "email")
+//        newUser.setValue(phone, forKey: "phone")
+//
+//        do {
+//            try context.save()
+//            print("Saved User")
+//        } catch {
+//            print("Error saving user")
+//        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -60,9 +96,8 @@ class NewsTableViewController: UITableViewController {
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else {return UITableViewCell()}
             cell.textLabel?.text = tableViewData[indexPath.section].title
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+//            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
             return cell
-
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else {return UITableViewCell()}
             cell.textLabel?.text = tableViewData[indexPath.section].sectionData[dataIndex]

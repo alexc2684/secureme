@@ -13,7 +13,13 @@
 		BC05B188208E0C0F0002C8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC05B187208E0C0F0002C8BE /* Assets.xcassets */; };
 		BC05B18B208E0C0F0002C8BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC05B189208E0C0F0002C8BE /* LaunchScreen.storyboard */; };
 		BC05B196208E0C0F0002C8BE /* securemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05B195208E0C0F0002C8BE /* securemeTests.swift */; };
-		BC05B1A1208E0C600002C8BE /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05B1A0208E0C600002C8BE /* NewsTableViewController.swift */; };
+		BC05B1A1208E0C600002C8BE /* NewsSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05B1A0208E0C600002C8BE /* NewsSelectionTableViewController.swift */; };
+		BC05B1AE208E1EF00002C8BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05B1AD208E1EF00002C8BE /* User.swift */; };
+		BC0CEFC5208EC27F00A4F348 /* NewsTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CEFC4208EC27F00A4F348 /* NewsTypeTableViewController.swift */; };
+		BC949C2A209061B20020A5EB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC949C29209061B20020A5EB /* SignupViewController.swift */; };
+		BC949C2E20906FC40020A5EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC949C2D20906FC40020A5EB /* LoginViewController.swift */; };
+		BC949C31209072CB0020A5EB /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC949C2F209072CB0020A5EB /* User.xcdatamodeld */; };
+		BCCB753B2090888C00BF680C /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,13 @@
 		BC05B191208E0C0F0002C8BE /* securemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = securemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC05B195208E0C0F0002C8BE /* securemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = securemeTests.swift; sourceTree = "<group>"; };
 		BC05B197208E0C0F0002C8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC05B1A0208E0C600002C8BE /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		BC05B1A0208E0C600002C8BE /* NewsSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSelectionTableViewController.swift; sourceTree = "<group>"; };
+		BC05B1AD208E1EF00002C8BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC0CEFC4208EC27F00A4F348 /* NewsTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTypeTableViewController.swift; sourceTree = "<group>"; };
+		BC949C29209061B20020A5EB /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BC949C2D20906FC40020A5EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC949C30209072CB0020A5EB /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +91,16 @@
 		BC05B17F208E0C0E0002C8BE /* secureme */ = {
 			isa = PBXGroup;
 			children = (
+				BC949C2D20906FC40020A5EB /* LoginViewController.swift */,
 				BC05B180208E0C0E0002C8BE /* AppDelegate.swift */,
 				BC05B182208E0C0E0002C8BE /* ViewController.swift */,
 				BC05B184208E0C0E0002C8BE /* Main.storyboard */,
-				BC05B1A0208E0C600002C8BE /* NewsTableViewController.swift */,
+				BCCB753A2090888C00BF680C /* ArticlesTableViewController.swift */,
+				BC949C2F209072CB0020A5EB /* User.xcdatamodeld */,
+				BC949C29209061B20020A5EB /* SignupViewController.swift */,
+				BC0CEFC4208EC27F00A4F348 /* NewsTypeTableViewController.swift */,
+				BC05B1AD208E1EF00002C8BE /* User.swift */,
+				BC05B1A0208E0C600002C8BE /* NewsSelectionTableViewController.swift */,
 				BC05B187208E0C0F0002C8BE /* Assets.xcassets */,
 				BC05B189208E0C0F0002C8BE /* LaunchScreen.storyboard */,
 				BC05B18C208E0C0F0002C8BE /* Info.plist */,
@@ -200,9 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC949C31209072CB0020A5EB /* User.xcdatamodeld in Sources */,
+				BC949C2E20906FC40020A5EB /* LoginViewController.swift in Sources */,
+				BC949C2A209061B20020A5EB /* SignupViewController.swift in Sources */,
+				BCCB753B2090888C00BF680C /* ArticlesTableViewController.swift in Sources */,
+				BC05B1AE208E1EF00002C8BE /* User.swift in Sources */,
 				BC05B183208E0C0E0002C8BE /* ViewController.swift in Sources */,
 				BC05B181208E0C0E0002C8BE /* AppDelegate.swift in Sources */,
-				BC05B1A1208E0C600002C8BE /* NewsTableViewController.swift in Sources */,
+				BC0CEFC5208EC27F00A4F348 /* NewsTypeTableViewController.swift in Sources */,
+				BC05B1A1208E0C600002C8BE /* NewsSelectionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +489,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC949C2F209072CB0020A5EB /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC949C30209072CB0020A5EB /* User.xcdatamodel */,
+			);
+			currentVersion = BC949C30209072CB0020A5EB /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC05B175208E0C0E0002C8BE /* Project object */;
 }
